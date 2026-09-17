@@ -1,0 +1,88 @@
+/* UserBookings.css */
+
+/* Container */
+.user-bookings {
+  
+  max-width: 800px;
+  margin: 50px auto;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Individual Booking Card */
+.booking-card {
+  background-color: #fffefe; /* gentle off-white */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.booking-card:hover {
+  
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Booking Title */
+.booking-card h3 {
+  margin: 0 0 12px 0;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+/* Booking Info Section */
+.booking-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.booking-info span {
+  display: inline-block;
+  min-width: 120px;
+}
+
+
+.booking-info .date {
+  background-color: #e0f7fa;
+  color: #00796b;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 400;
+}
+
+/* Divider */
+.booking-card hr {
+  margin-top: 15px;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+/* Loading & Error Messages */
+p {
+  font-size: 1rem;
+  color: #666;
+}
+p[style*="color: red"] {
+  font-weight: 500;
+}
+.delete-btn {
+  background-color: #fa1216;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #ff7875;
+}

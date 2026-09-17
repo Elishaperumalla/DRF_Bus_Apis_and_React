@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #2575fc;
+  --primary-hover: #3900ca;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --text-color: #333;
+}
+
+.wrapper-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  background-color: #ffffff;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* LOGO */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-top: 1px;
+  gap: 5px;
+  flex-wrap: wrap; 
+  
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: 400;
+  transition: color 0.2s ease;
+  padding: 8px;
+  border-radius: 10px;
+  
+}
+
+.nav-links a:hover {
+  color: rgb(5, 5, 5);
+  background-color: #f2f2f2;
+
+}
+
+/* AUTH SECTION */
+.auth-section {
+  display: flex;
+  gap: 1px;
+  align-items: center;
+}
+
+.auth-section button {
+  color: rgb(0, 0, 0);
+  font-family: var(--font-family);
+  background-color: #ffffff;
+  border: none;
+  padding: 7px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 300;
+  transition: background-color 0.3s ease;
+}
+.auth-section button:hover {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+ 
+}
+
+
+/* MAIN */
+main {
+  flex: 1;
+  padding: 30px;
+  margin-top: 90px; /* Add margin to account for fixed navbar */
+  box-sizing: border-box;
+}
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-text {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  transition: transform 0.5s ease;
+  font-family: 'arial', sans-serif;
+}
+.highlight {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.logo-text:hover {
+  transform: scale(1.00);
+  color: var(--primary-hover);
+}
+
+.logo-text .highlight {
+  color: #ff9800; /* orange for ‘Ur’ */
+}
+.welcome-text {
+  font-size: 16px;
+  margin-right: 50px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+/* Toast Container Styling - Fixed to viewport top-right corner */
+.Toastify__toast-container {
+  position: fixed !important;
+  z-index: 9999 !important;
+}
+
+.Toastify__toast-container--top-right {
+  top: 20px !important;
+  right: 20px !important;
+}
+
+.Toastify__toast {
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  margin-bottom: 10px !important;
+  font-size: 14px !important;
+  padding: 12px 16px !important;
+}
